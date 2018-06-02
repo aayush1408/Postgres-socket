@@ -4,5 +4,6 @@ var time = document.getElementById('time');
 
 //Listen for the emits
 socket.on('update',(data)=>{
-    time.innerHTML = data;
+    var json_data = JSON.stringify(data);
+    console.log(json_data);
 });
